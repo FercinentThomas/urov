@@ -68,29 +68,52 @@ open raspberry pi imager under raspberry pi device chooses raspberry pi 4, under
 then choose your storage (the SD card in which you want to flash) 
 click next to flash the OS
 
+
+
 <img width="448" height="252" alt="image" src="https://github.com/user-attachments/assets/b445d6b0-74fa-4a17-baa8-7e81f423e906" />
+
+
+
 
 3.	Insert the SD card into the Raspberry Pi.
 4.	Power up and connect to BlueOS via browser (http://192.168.2.2:8080 or appropriate IP).
 1.2 Install and Configure ArduSub
-•	Connect Pixhawk to pc using a USB cable and open Qground control, there will a Q icon on the left top corner click on that icon and click vehicle setup there you can see a firmware tab open to install the firmware 
+•	Connect Pixhawk to pc using a USB cable and open Qground control, there will a Q icon on the left top corner click on that icon and click vehicle setup there you can see a firmware tab open to install the firmware
+
+
 <img width="550" height="309" alt="image" src="https://github.com/user-attachments/assets/3a6ea5e6-3847-4376-9e48-fc0a634bea01" />
+
+
 
 2. QGroundControl (QGC) Setup
 2.1 Connect to QGround Control
 •	Open QGC on your PC. Go to vehicle setup now you want to calibrate sensors   
 3. Compass & Accelerometer Calibration
 1.	In QGC, go to Vehicle Setup > Sensors.
+
+   
 <img width="585" height="329" alt="image" src="https://github.com/user-attachments/assets/acd27c2d-4af0-42b2-b176-13a0143dba03" />
-2.	Click acceletrometer.
-3.	Follow the instructions (rotate the vehicle in all axes).
+
+
+
+3.	Click acceletrometer.
+4.	Follow the instructions (rotate the vehicle in all axes).
+
+
 <img width="568" height="343" alt="image" src="https://github.com/user-attachments/assets/b7ef719d-a63a-4f2f-aa57-2fff72505e18" />
+
+
+
 Save and reboot 
-4.	After accelerometer calibration do compass calibration calibration 
+5.	After accelerometer calibration do compass calibration calibration 
        5.  Start the individual calibration steps by clicking one of the buttons to the left.
 Rotate the vehicle randomly around all axes until the progress bar fills all the way to the right.
 
+
+
 <img width="567" height="349" alt="image" src="https://github.com/user-attachments/assets/f232268c-cda9-40a0-a6b3-f34d5763a62e" />
+
+
               Save and reboot.
 4. Joystick/Gamepad Calibration
 1.	Connect your joystick/gamepad to your PC.
@@ -100,18 +123,26 @@ The Operator Console may require calibration before you can enable it for use in
 1. Go to the Vehicle Settings page in AQUANAUT HMI, then click on the red Joystick tab in the sidebar on the left. If you do not see a Joystick tab, this indicates that the Console is not detected by HMI or not connected to the computer.
 2. When the Operator Console is connected, in the Joystick tab, on General settings, Tick the checkbox that says Enable Joystick.
 4.	  Click Calibration settings, then click Start.
+
+
   <img width="940" height="608" alt="image" src="https://github.com/user-attachments/assets/fb5e4553-c474-4e78-a951-867eb07ca468" />
 
-  5.	4. Follow the step-by-step instructions and move the sticks as indicated in AQUANAUT HMI.
-6.	When completed, the Joystick tab will no longer be red, and the Enabled checkbox on the Joystick page will be enabled.
+  
 
-7.	Follow the prompts to calibrate axes and buttons.
-8.	Assign joystick buttons for functions (e.g., arming, mode change, lights).
+  6.	4. Follow the step-by-step instructions and move the sticks as indicated in AQUANAUT HMI.
+7.	When completed, the Joystick tab will no longer be red, and the Enabled checkbox on the Joystick page will be enabled.
+
+8.	Follow the prompts to calibrate axes and buttons.
+9.	Assign joystick buttons for functions (e.g., arming, mode change, lights).
 
 
 Button Setup 
 The default button setup for the AQUANAUT 30 V3 is shown below:
+
+
 <img width="367" height="231" alt="image" src="https://github.com/user-attachments/assets/5f6acd81-f6f0-4d7d-9c34-92c255c7ffcc" />
+
+
 The button layout can be configured in the Joystick tab on the Vehicle Setup page under Button Assignment.
 1. Go to the Vehicle Setup menu then select Joystick from the sidebar.
 2. Under Button Assignment, AQUANAUT HMI shows a list of all the buttons and their assigned functions.
@@ -134,8 +165,12 @@ Below is a list of the common button functions and the associated button functio
 6. Frame setup
 •	In QGC > Vehicle Setup > frame 
 Select 8 thruster configuration frame for Aquanaut 30 v3
+
+
    
 <img width="658" height="370" alt="image" src="https://github.com/user-attachments/assets/6c3b4c51-2429-4c62-a08e-bccd1666363f" />
+
+
 
 7. Power setup
 1.	In QGC, go to Vehicle Setup > power
@@ -172,10 +207,12 @@ Example values (for standard 3DR Power Module):
 •	Use a multimeter to measure actual battery voltage and current draw.
 •	Adjust the voltage divider and amps per volt until QGC shows accurate readings.
 1. In QGC Vehicle Setup, click on the Power tab in the left sidebar.
+
+   
 <img width="940" height="590" alt="image" src="https://github.com/user-attachments/assets/e342a26f-1603-46e6-954b-6fdf86818ac0" />
 
-2. Select “Analog Voltage and Current” from the Battery monitor dropdown.
-3. Select the correct option from the Power sensor dropdown menu.
+3. Select “Analog Voltage and Current” from the Battery monitor dropdown.
+4. Select the correct option from the Power sensor dropdown menu.
 •	If using a Blue Robotics Power Sense Module, select “Navigator w/ Blue Robotics Power Sense Module” from the dropdown menu. No further configuration is necessary.
 <img width="940" height="590" alt="image" src="https://github.com/user-attachments/assets/50d7e9b1-7232-4f93-846e-bca9f07a2da7" />
 
