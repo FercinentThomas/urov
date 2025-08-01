@@ -42,6 +42,10 @@ The rover is constructed using a durable combination of aluminum and acrylic tub
 For visibility, the rover is outfitted with four powerful 4 lights, each providing 1500 lumens of illumination. To monitor depth, a pressure sensor is integrated into the frame, providing accurate real-time data as the rover dives down. Communication is handled through a tether cable, which connects to a cable drum. From the cable drum, a cable leads to the GCS computer. The system is easily controlled using an Operator Console, offering intuitive operation.
 The cable drum also features a toggle switch for powering the rover on and off, ensuring quick and easy deployment. With its practical design and advanced capabilities, the Aqua Naut 30 is an excellent solution for a wide range of underwater inspection applications.
 
+
+<img width="565" height="522" alt="image" src="https://github.com/user-attachments/assets/d398ea68-bb4f-4bff-8592-c5d101a985b5" />
+
+
  
 CHAPTER-3
 
