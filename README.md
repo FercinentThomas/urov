@@ -214,7 +214,130 @@ Example values (for standard 3DR Power Module):
 3. Select “Analog Voltage and Current” from the Battery monitor dropdown.
 4. Select the correct option from the Power sensor dropdown menu.
 •	If using a Blue Robotics Power Sense Module, select “Navigator w/ Blue Robotics Power Sense Module” from the dropdown menu. No further configuration is necessary.
+
+
 <img width="940" height="590" alt="image" src="https://github.com/user-attachments/assets/50d7e9b1-7232-4f93-846e-bca9f07a2da7" />
+
+
+•	If using any other type of power module, select “Other” from the dropdown menu and proceed to the next step.
+4. Set the Current pin dropdown menu option to “CubeOrange_PM2/Navigator” and set the Voltage pin dropdown menu option to “Navigator”.
+
+
+<img width="940" height="590" alt="image" src="https://github.com/user-attachments/assets/5b4dbcc9-a7fd-46bc-b88d-56fea6ab690e" />
+
+
+5. Enter the Voltage multiplier, Amps per volt, and Amps Offset values according to your power module’s documentation.
+6. 
+
+   <img width="940" height="590" alt="image" src="https://github.com/user-attachments/assets/51ad8faf-a022-42ee-87f9-fb172dfd4d00" />
+
+
+    6. Save and Reboot
+After setting the values:
+•	Click "Calibrate" or "Save"
+•	Reboot your flight controller to ensure settings are retained.
+
+
+
+<img width="940" height="1221" alt="image" src="https://github.com/user-attachments/assets/fc4325a2-6c7f-415f-b4ea-971b0dad58f6" />
+
+
+                                                         Internal Connection Setup
+
+
+<img width="1014" height="1174" alt="image" src="https://github.com/user-attachments/assets/c0c2b99d-8faf-4147-ab60-a4589c235aa9" />
+
+
+
+<img width="603" height="734" alt="image" src="https://github.com/user-attachments/assets/d80ebae0-150a-41bd-b428-9464adae430f" />
+
+
+
+CHAPTER 4
+SYSTEM SPECIFICATION
+AQUANAUT 30 V3 is a Remotely Operated Vehicle (ROV) which can be deployed for underwater survey of structures like dams, bridge piers and buried artefacts. The specifications of AQUANAUT 30 V3 are as follows:
+
+Size		: 440m X 500m X 140mm
+Weight		: < 9 kg
+Construction	: Aluminum material and Modular allowing for easy maintainability
+Depth Rating	: 30m
+Speed		: 2 knots
+Endurance 	: 2 hours using Lithium battery
+Stance		: Holding capability in different configurations at different depths
+Power		: 4 thrusters with 1.3kg thrust and 4 thrusters with 7kg thrust
+Vision		: 1080p HD Underwater Camera with remotely controlled tilt axis
+Control	: Through electrical tether cable
+Payload	: Configurable as per Users’ requirement (customization can be carried out)
+Internal compartment	: Water sealed space for user defined payloads
+Ground Control Station	: Intel i3 based Laptop with Ubuntu OS, 
+Interface Cable                         : 100m tether Cable on Cable Drum.
+Human Machine Interface	: Specially designed User interface 
+
+ 
+                                                  CHAPTER 5
+5.1	 OPERATING INSTRUCATION FOR USE AND INSTALLATION
+       Step1   Connect the System:
+o	At the back side of the rov you can see the female connector panel. one of the 8 pin female connectors (under the connector its written tether) is used to connect the tether cable (which is used for communication) from the cable drum you can a connect a green cable with a black male connector to the tether connector.
+            
+
+o	You can see an ash ethernet cable from the cable drum. Connect it to the ethernet port of your laptop.
+                
+
+              Step2    Power On the ROV:
+o	On the cable drum, flip the toggle switch to turn on the system.
+                  
+
+o	The ROV powers up automatically.
+        Step 5: Open AQUANAUT 30 V3 HMI Software.
+- On your laptop, launch the Aquanaut 30 V3 HMI software.
+- The software will be preconfigured to interface with the Aquanaut 30 V3 ROV.
+
+ 
+  
+{Note: If you are using a new laptop, you should configure the IP address of the adapter that is connected.
+ NETWORK SETUP OF AQUANAUT 30 V3
+{Note: Configuration to be carried out when connected with new laptop)
+1. Go to the Windows Control Panel then select Network and Sharing Center. 
+             2. under view your active networks. There will a network shown as unidentified network. Next to that you can see an option like access type and connections, click ethernet and enter to properties 
+
+ 
+4. In the properties dialog, click on Internet Protocol Version 4 (TCP/IPv4) to highlight it, then Click Properties.
+ 
+5. Select “Use the following IP address” And enter 192.168.2.1 for the IP address and 255.255.255.0 for the Subnet mask. Select OK, you can then close out the rest of the windows.
+ 
+
+     Now the HMI should show that it is connected and live camera feed should be visible.
+
+Step 6: Wait for Software to Load
+ - The connection process may take up to 2 minutes. Once the connection is established, the    
+   AQUANAUT HMI interface will change from Disconnected to Ready to Fly.
+- You should also see the live camera feed from the ROV within the software. 
+        
+ Light 1 Intensity 
+ Step 8: Connect and Configure the Joystick.
+- Plug the joystick controller into your laptop.
+- On AQUANAUT V3 30 HMI software, the joystick status indicator (top left of the interface) should turn from red to white, showing it is connected.
+{Note: If it is your first time using the joystick or if you change the joystick, So, you will see a yellow joystick indication while connected which indicates that calibration of the remote is required. You can refer chapter for calibration of your new Joystick} 
+Step 9: Test Joystick Controls
+- Before deployment, test the controls to ensure the ROV responds correctly to joystick inputs. 
+(Power on the rov. after connection is established, you can just move the throttle stick to check the rov is responding to the joystick) (e.g if you want to check the lights press the button assigned to the light to joystick and check whether the lights are working)
+Step 10: Deploy the ROV
+- Once all connections and controls are verified, you can deploy the ROV into the water for your mission.
+- Press the Arm button on the game controller for turning on the motor controls.
+
+mechanical drawings 
+
+
+<img width="1247" height="752" alt="image" src="https://github.com/user-attachments/assets/984b9d42-193c-4ae3-b31b-4161644721c7" />
+
+
+
+
+
+
+
+
+
 
 
 
